@@ -150,7 +150,7 @@ def 글꼴_찾기(설정):
               '/System/Library/Fonts/AppleSDGothicNeo.ttc', '/Library/Fonts/NanumGothicBold.ttf',
               '/usr/share/fonts/truetype/nanum/NanumGothicBold.ttf']:
         if os.path.exists(c):
-            알림(f'  [안내] 설정한 글꼴을 찾지 못해 기본 글꼴({os.path.basename(c)})을 사용합니다.')
+            알림(f'  [안내] 「글꼴」 폴더에 글꼴이 없어 기본 글꼴({os.path.basename(c)})로 만듭니다.')
             return c
     raise 오류('사용할 수 있는 한글 글꼴이 없습니다. 「글꼴」 폴더에 .ttf 또는 .otf 글꼴을 넣어 주세요.')
 
